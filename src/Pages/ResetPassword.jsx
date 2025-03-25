@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,Link  } from "react-router-dom";
 import axios from "axios";
 import "../Styles/Auth.css";
 
@@ -26,6 +26,7 @@ function ResetPassword() {
         <input type="password" placeholder="Enter new password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} required />
         <button type="submit">Reset Password</button>
       </form>
+      <p>Back to <Link to="/">Login</Link></p>
     </div>
   );
 }
