@@ -26,7 +26,6 @@ function ResetPassword() {
         <input type="password" placeholder="Enter new password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} required />
         <button type="submit">Reset Password</button>
       </form>
-      {message && <p>{message}</p>}
     </div>
   );
 }

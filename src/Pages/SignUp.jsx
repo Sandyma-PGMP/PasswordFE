@@ -10,7 +10,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${API_BASE_URL}/auth/create-user`, { email, password });
+      const res = await axios.post(`${API_BASE_URL}/auth/sign-up`, { email, password });
       alert(res.data.message);
     } catch (err) {
       alert("Error creating account");}
