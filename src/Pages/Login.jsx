@@ -11,7 +11,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = axios.post(`${API_BASE_URL}/auth/login`, { email, password });
+      const res = await  axios.post(`${API_BASE_URL}/auth/login`, { email, password });
       alert(res.data.message);
     } catch (err) {
     alert("Invalid email or password");
